@@ -65,12 +65,6 @@ Ensure these files are in your project directory:
 python app.py
 ```
 
-### 5. Access the Application
-Open your web browser and navigate to:
-```
-http://127.0.0.1:5000
-```
-
 ## 📋 Input Features
 
 The application requires the following customer information:
@@ -131,41 +125,3 @@ The application requires the following customer information:
 **Sample Output:**
 - "This customer is likely to churn (leave)! Confidence: 85.3%"
 - "This customer is likely to continue! Confidence: 92.1%"
-
-## 🔍 Troubleshooting
-
-### Common Issues
-
-1. **Template Not Found Error**
-   ```
-   Solution: Ensure home.html is in the same directory as app.py
-   ```
-
-2. **Model File Not Found**
-   ```
-   Solution: Ensure model.sav exists in the project directory
-   ```
-
-3. **Import Errors**
-   ```
-   Solution: Install missing packages using pip install <package-name>
-   ```
-
-4. **Invalid Input Error**
-   ```
-   Solution: Ensure numeric fields contain valid numbers
-   ```
-
-## 📊 Model Training
-
-To retrain the model with new data:
-
-1. **Prepare Data**: Update the training dataset
-2. **Run Training Script**: Execute the model training pipeline
-3. **Data Processing**: 
-   - Handle missing values
-   - Create feature groups
-   - Apply one-hot encoding
-   - Balance data using SMOTEENN
-4. **Train Model**: Fit Random Forest Classifier
-5. **Save Model**: Export trained model as pickle file
